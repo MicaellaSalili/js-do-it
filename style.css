@@ -1,0 +1,70 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111111;
+    color: white;
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 100vh; /* Make the body full height */
+}
+
+/* Container to hold everything */
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 80%; /* Adjust the height of the container */
+    width: 80%; /* Adjust the width of the container */
+}
+
+/* Left section styles */
+.left {
+    max-width: 50%;
+    text-align: left; /* Ensure text is aligned to the left */
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #8F00F0; /* Red color for JS */
+}
+
+.subtitle {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Right section styles */
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character {
+    max-width: 400px;
+    height: auto;
+}
+
+/* Add some responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center; /* Center the text on smaller screens */
+    }
+
+    .left, .right {
+        max-width: 100%;
+    }
+}
